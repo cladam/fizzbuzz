@@ -5,9 +5,9 @@ class fizzbuzz {
 			if (i%15 == 0) {
 				answer = "FizzBuzz";
 			} else if (i%3 == 0) {
-				answer = "Buzz";
-			} else if (i%5 == 0) {
 				answer = "Fizz";
+			} else if (i%5 == 0) {
+				answer = "Buzz";
 			} else {
 				answer = "";
 			}

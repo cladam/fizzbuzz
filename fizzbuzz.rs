@@ -16,8 +16,8 @@ fn for_loop() {
 	for num in range(1, 101) {
 		println!("Number: {} is = {}", num,
 			if (num % 15 == 0) { ~"FizzBuzz" }
-			else if (num % 3 == 0) { ~"Buzz" }
-			else if (num % 5 == 0) { ~"Fizz" }
+			else if (num % 3 == 0) { ~"Fizz" }
+			else if (num % 5 == 0) { ~"Buzz" }
 			else { ~"" }
 		);
 	}
@@ -28,8 +28,8 @@ fn while_loop() {
 	while num <= 100 {
 		println!("Number: {} is = {}", num,
 			if (num % 15 == 0) { ~"FizzBuzz" }
-			else if (num % 3 == 0) { ~"Buzz" }
-			else if (num % 5 == 0) { ~"Fizz" }
+			else if (num % 3 == 0) { ~"Fizz" }
+			else if (num % 5 == 0) { ~"Buzz" }
 			else { ~"" }
 		);
 		num += 1;
@@ -43,9 +43,9 @@ fn first() {
 		if is_fifteen(num) {
 			answer = "FizzBuzz";
 		} else if is_three(num) {
-			answer = "Buzz";
-		} else if is_five(num) {
 			answer = "Fizz";
+		} else if is_five(num) {
+			answer = "Buzz";
 		} else {
 			answer = "";
 		}
@@ -59,9 +59,9 @@ fn second() {
 		if is_fifteen(num) {
 			"FizzBuzz"
 		} else if is_three(num) {
-			"Buzz"
-		} else if is_five(num) {
 			"Fizz"
+		} else if is_five(num) {
+			"Buzz"
 		} else {
 			""
 		};
@@ -75,8 +75,8 @@ fn third() {
 	for num in range(1, 101) {
 		println!("Number: {} is = {}", num,
 			if is_fifteen(num) { ~"FizzBuzz" }
-			else if is_three(num) { ~"Buzz" }
-			else if is_fifteen(num) { ~"Fizz" }
+			else if is_three(num) { ~"Fizz" }
+			else if is_fifteen(num) { ~"Buzz" }
 			else { ~"" }
 		);
 	}
