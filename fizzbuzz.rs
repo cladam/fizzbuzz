@@ -12,7 +12,6 @@ fn is_fifteen(num: int) -> bool {
 	num % 15 == 0
 }
 
-
 fn for_loop() {
 	for num in range(1, 101) {
 		println!("Number: {} is = {}", num,
@@ -85,33 +84,8 @@ fn third() {
 
 fn main() {
 	//for_loop();
-		/*
-		real	0m0.006s
-		user	0m0.002s
-		sys		0m0.005s
-		*/
 	//while_loop();
-		/*
-		real	0m0.006s
-		user	0m0.002s
-		sys		0m0.005s
-		*/
 	//first();
-		/*
-		real	0m0.006s
-		user	0m0.002s
-		sys		0m0.005s
-		*/
 	//second();
-		/*
-		real	0m0.006s
-		user	0m0.002s
-		sys		0m0.005s
-		*/
-	//third();
-		/*
-		real	0m0.006s
-		user	0m0.002s
-		sys		0m0.005s
-		*/
+	third();
 }
