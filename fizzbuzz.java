@@ -9,9 +9,9 @@ class fizzbuzz {
 			} else if (i%5 == 0) {
 				answer = "Buzz";
 			} else {
-				answer = "";
+				answer = Integer.toString(i);
 			}
-			System.out.println("Number: " + Integer.toString(i) + " is: " + answer);
+			System.out.println(answer);
 		}
 	}
 }

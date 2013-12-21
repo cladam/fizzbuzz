@@ -14,11 +14,11 @@ fn is_fifteen(num: int) -> bool {
 
 fn for_loop() {
 	for num in range(1, 101) {
-		println!("Number: {} is = {}", num,
+		println(
 			if (num % 15 == 0) { ~"FizzBuzz" }
 			else if (num % 3 == 0) { ~"Fizz" }
 			else if (num % 5 == 0) { ~"Buzz" }
-			else { ~"" }
+			else { num.to_str() }
 		);
 	}
 }
@@ -26,11 +26,11 @@ fn for_loop() {
 fn while_loop() {
 	let mut num:uint = 1;
 	while num <= 100 {
-		println!("Number: {} is = {}", num,
+		println(
 			if (num % 15 == 0) { ~"FizzBuzz" }
 			else if (num % 3 == 0) { ~"Fizz" }
 			else if (num % 5 == 0) { ~"Buzz" }
-			else { ~"" }
+			else { num.to_str() }
 		);
 		num += 1;
 	}
@@ -49,7 +49,12 @@ fn first() {
 		} else {
 			answer = "";
 		}
-		println!("Number: {} is: {}", num, answer);
+
+		if (answer != "") {
+			println(answer);
+		} else {
+			println(num.to_str());
+		}
 	}
 }
 
@@ -65,19 +70,23 @@ fn second() {
 		} else {
 			""
 		};
+
 		if (answer != "") {
-			println!("Number: {} is: {}", num, answer);
+			println(answer);
+		} else {
+			println(num.to_str());
 		}
+		
 	}
 }
 
 fn third() {
 	for num in range(1, 101) {
-		println!("Number: {} is = {}", num,
+		println(
 			if is_fifteen(num) { ~"FizzBuzz" }
 			else if is_three(num) { ~"Fizz" }
-			else if is_fifteen(num) { ~"Buzz" }
-			else { ~"" }
+			else if is_five(num) { ~"Buzz" }
+			else { num.to_str() }
 		);
 	}
 }
